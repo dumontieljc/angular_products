@@ -1,0 +1,24 @@
+.mat-card {
+  background: #5D82D9;
+  color: #fff;
+  width: 80%;
+  margin: 1% auto;
+  padding: 2%;
+
+  .mat-card-header{
+    display: block;
+    .mat-card-title{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .mat-card-content{
+    width: 80%;  
+    margin: 0 auto;
+    text-align: center;
+    p.content{
+      text-align: initial;
+    }
+  }
+}      

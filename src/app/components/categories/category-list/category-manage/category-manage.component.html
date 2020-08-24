@@ -1,0 +1,38 @@
+<mat-card class="category-card" >    
+ 
+    <mat-card-content>
+        <form [formGroup]="productForm" (ngSubmit)="onSave(productForm.value)" >            
+            
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Código" formControlName="Code" >
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Nombre" formControlName="Name" >
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Descripción" formControlName="Description" >
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="number" matInput placeholder="Precio" formControlName="Price" >
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="number" matInput placeholder="Existencias" formControlName="Exitence" >
+                </mat-form-field>
+            </p>
+                        
+            <button type="submit" mat-raised-button mat-raised-button color="primary">Guardar</button> &nbsp;&nbsp;     
+            <button mat-raised-button matDialogClose color="warn">Cancelar</button>
+            
+        </form>
+    </mat-card-content>
+    </mat-card>    
+    
